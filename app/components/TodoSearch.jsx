@@ -9,7 +9,7 @@ export var TodoSearch = React.createClass({
             <div className="container__header">
                 <div>
                     <input type="search" ref="searchText" placeholder="Search todos" value={searchText} onChange={()=>{
-                            var searchText = this.refs.searchText.value;
+                            var searchText = this.refs.searchText.value.toLowerCase();
                             dispatch(actions.setSearchText(searchText));
                         }}/>
                 </div>
