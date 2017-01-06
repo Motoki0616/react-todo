@@ -1,0 +1,72 @@
+.login-box {
+    display: flex;
+    width: 100%;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        z-index: -1;
+        background-color: #111;
+        -webkit-transform: skew(-10deg) translateX(50%);
+        transform: skew(-10deg) translateX(50%);
+    }
+}
+
+
+.title-box {
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+    .page-title {
+        text-align: center;
+        padding: 2rem 0;
+        font-family: $main-font;
+        color: $key-color;
+        font-size: 8rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) rotate(-90deg);
+
+    }
+}
+
+
+.callout-auth {
+    padding: 2rem;
+    text-align: center;
+    width: 50%;
+    height: 100vh;
+    background-color: #0d0d0d;
+    .callout-box {
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        .login-title {
+            font-family: $main-font;
+            color: $key-color;
+            margin-bottom: 2rem;
+            font-size: 3rem;
+        }
+        p {
+            margin-bottom: 2rem;
+            color: #fff;
+        }
+        .btn {
+            border: 1px solid $key-color;
+            color: $key-color;
+            padding: 10px 20px;
+            transition: all 0.2s ease-in;
+            &:hover {
+                background-color: $key-color;
+                color: #0d0d0d;
+            }
+        }
+    }
+}

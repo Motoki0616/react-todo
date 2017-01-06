@@ -14,21 +14,20 @@ export class Login extends React.Component {
     }
     render(){
         return (
-            <div>
-                <h1 className="page-title">Todo App</h1>
-
-                <div className="row">
-                    <div className="columns small-centered small-10 medium-6 large-4">
-                        <div className="callout callout-auth">
-                            <h3>Login</h3>
-                            <p>
-                                Login with Github account below.
-                            </p>
-                            <button className="button" onClick={this.onLogin}>Login with Github</button>
-                        </div>
+                <div className="login-box">
+                    <div className="title-box">
+                        <h1 className="page-title">Todo Application</h1>
+                    </div>
+                <div className="callout callout-auth">
+                    <div className="callout-box">
+                    <h3 className="login-title">Login</h3>
+                    <p>
+                        Login with Github account below.
+                    </p>
+                    <button className="btn" onClick={this.onLogin}>Login with Github</button>
                     </div>
                 </div>
-            </div>
+                </div>
         );
     }
 };
