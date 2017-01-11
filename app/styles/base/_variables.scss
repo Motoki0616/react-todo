@@ -9,3 +9,25 @@ $light-color: #aaa;
 $main-font: 'Playfair Display', serif;
 
 $key-color: #c0a062;
+
+//Mixin
+@mixin mq($break) {
+  @if $break == "large" {
+    @media (max-width: 1130px) {
+      @content;
+    }
+  }
+  @else if $break == "medium" {
+    @media (max-width: 950px) {
+      @content;
+    }
+  }
+  @else if $break == "small" {
+    @media (max-width: 500px) {
+      @content;
+    }
+  }
+   @else {
+    @error "Whoops! No value could be retrieved for `#{$break}`. "
+  }
+}

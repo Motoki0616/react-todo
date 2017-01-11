@@ -7,6 +7,12 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    @include mq("medium"){
+        width: 80%;
+    }
+    @include mq("medium"){
+        width: 90%;
+    }
 }
 
 .container__header {
